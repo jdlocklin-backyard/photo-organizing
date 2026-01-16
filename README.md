@@ -16,6 +16,8 @@ Then navigate into the project directory:
 cd photo-organizing
 ```
 
+> **Note:** On my local machine, this project is located at `PS D:\organize_photos>`
+
 ### 2. Commit Your Changes
 
 After making changes to the project, you can commit them using the following commands:

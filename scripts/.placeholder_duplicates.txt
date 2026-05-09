@@ -1,0 +1,9 @@
+from pathlib import Path
+import shutil
+
+root = Path(__file__).resolve().parent.parent
+legacy_path = root / "find_duplicates.py"
+target_path = root / "scripts" / "find_duplicates.py"
+
+if legacy_path.exists() and not target_path.exists():
+    shutil.move(str(legacy_path), str(target_path))

@@ -1,40 +1,62 @@
 # photo-organizing
 
-## Getting Started
+Simple Python tools for organizing and cleaning up a photo library.
 
-### 1. Clone this Repository
+## What This Repository Does
 
-To clone this repository to your local machine, run the following command:
+This project includes scripts to:
 
-```bash
-git clone https://github.com/jdlocklin-backyard/photo-organizing.git
+- organize photos and videos into date-based folders
+- find likely duplicate files
+- delete junk files and empty folders
+
+## Project Structure
+
+```text
+photo-organizing/
+├── README.md
+├── requirements.txt
+├── docs/
+│   ├── user-guide.md
+│   ├── organize_photos.md
+│   ├── find_duplicates.md
+│   └── delete_empty_folders.md
+├── scripts/
+│   ├── organize_photos.py
+│   ├── find_duplicates.py
+│   └── delete_empty_folders.py
 ```
 
-Then navigate into the project directory:
+## Requirements
+
+- Python 3.10+
+- Dependencies from `requirements.txt`
+
+Install dependencies with:
 
 ```bash
-cd photo-organizing
+pip install -r requirements.txt
 ```
 
-> **Note:** On my local machine, this project is located at `PS D:\organize_photos>`
+## Quick Start
 
-### 2. Commit Your Changes
-
-After making changes to the project, you can commit them using the following commands:
+Run the scripts from the repository root:
 
 ```bash
-# Check the status of your changes
-git status
-
-# Stage all changes
-git add .
-
-# Or stage specific files
-git add <filename>
-
-# Commit your changes with a message
-git commit -m "Your descriptive commit message"
-
-# Push your changes to the remote repository
-git push origin main
+python scripts/organize_photos.py
+python scripts/find_duplicates.py
+python scripts/delete_empty_folders.py
 ```
+
+## Documentation
+
+- [User Guide](docs/user-guide.md)
+- [Organize Photos](docs/organize_photos.md)
+- [Find Duplicates](docs/find_duplicates.md)
+- [Delete Empty Folders](docs/delete_empty_folders.md)
+
+## Recommended Workflow
+
+1. Organize files with `scripts/organize_photos.py`
+2. Review duplicates with `scripts/find_duplicates.py`
+3. Clean up leftovers with `scripts/delete_empty_folders.py`
